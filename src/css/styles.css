@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font: Montserrat, sans-serif;
+  --secondary-font: Dancing Script, sans-serif;
+  --primary-color: #009140;
+}
+::-webkit-scrollbar {
+  width:8px;
+  background-color: #bff3d5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, green, rgb(9, 134, 9));
+  min-width: 5px;
+  border-radius: 5px;
+  z-index: 998;
+}
+body {
+  overflow-x: hidden;
+}
+
+.line {
+  margin: 0px;
+  width: 100%;
+  background: linear-gradient(135deg, var(--primary-color) 0%,#02ca59 100%);
+  height: 2px;
+}
