@@ -1,6 +1,3 @@
-AOS.init()
-
-
 const sessaoHeader = document.querySelector('header');
 
     window.addEventListener('scroll', () => {

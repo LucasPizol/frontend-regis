@@ -5,14 +5,22 @@
   height: 100vh;
   background: linear-gradient(
       to right,
-      rgb(255, 255, 255) 15%,
+      rgb(255, 255, 255) 28%,
       rgba(255, 255, 255, 0) 70%
     ),
-    url(https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/334646464_945499830146118_8545570149405204720_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeE0cPWV7Pv0KOIT3IZ6QyX_JqbWmYjCaAsmptaZiMJoC0OQeABqQR5tLRoFzIA5MQc_IavbN76eDkXMbvcn1vcV&_nc_ohc=oCf4eyifAFcAX8o31CE&_nc_oc=AQmVcjeCw3aaCR3B8s8V9JI0o9pXJFZziW13_A02SnYwpWCvvbX0-meCrc5Ue2PNvXA&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfCiZxC-4Bn2XHHjlupjiSY5yvWM08HR0ke3b0ESMDLqpw&oe=65BF45E4);
+    url(/public/regis.jpg);
   background-position: center;
   background-position-x: 70%;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+}
+.teste {
+  align-self: flex-end;
+}
+.teste img {
+  height: 100%;
+  width: 100%;
 }
 .sessao-inicial-div {
   width: 100%;
@@ -22,9 +30,11 @@
   max-width: 1400px;
   font-family: var(--font);
   padding: 0 20px;
+  height: 101%;
+  overflow: hidden;
+  position: relative;
 }
 .sessao-inicial-div article {
-  max-width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,29 +73,63 @@
   width: 16px;
 }
 
-@media (max-width: 460px) {
+.seta {
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 950px) {
   .sessao-inicial {
     background: linear-gradient(
         to bottom,
-        rgb(255, 255, 255) 15%,
-        rgba(255, 255, 255, 0) 70%
+        rgb(255, 255, 255) 0%,
+        rgba(255, 255, 255, 0) 60%
       ),
-      url(https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/334646464_945499830146118_8545570149405204720_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeE0cPWV7Pv0KOIT3IZ6QyX_JqbWmYjCaAsmptaZiMJoC0OQeABqQR5tLRoFzIA5MQc_IavbN76eDkXMbvcn1vcV&_nc_ohc=oCf4eyifAFcAX8o31CE&_nc_oc=AQmVcjeCw3aaCR3B8s8V9JI0o9pXJFZziW13_A02SnYwpWCvvbX0-meCrc5Ue2PNvXA&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfCiZxC-4Bn2XHHjlupjiSY5yvWM08HR0ke3b0ESMDLqpw&oe=65BF45E4);
-    background-position: center;
-    background-position-x: 70%;
-    background-repeat: no-repeat;
+      url(/public/regis.jpg);
+    background-position-x: right;
+    background-position-y: bottom;
     background-size: cover;
+  }
+  .sessao-inicial-div {
+    flex-direction: column;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 60px;
+  }
+  .sessao-inicial-div article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .seta {
+    transform: translate(-50%, -100%);
+  }
+}
+
+@media (max-width: 460px) {
+  .sessao-inicial {
+    justify-content: flex-start;
   }
   .sessao-inicial-div article {
     max-width: none;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     text-align: center;
-    margin-bottom: 350px;
+    flex: 1;
   }
   .sessao-inicial-div article h1 {
     font-size: 40px;
     color: #363636;
     font-weight: 800;
+  }
+  .seta {
   }
 }
