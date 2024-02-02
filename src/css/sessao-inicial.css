@@ -90,7 +90,7 @@
         rgb(255, 255, 255) 0%,
         rgba(255, 255, 255, 0) 60%
       ),
-      url(/public/regis.jpg);
+      url(../images/img_regis.jpg);
     background-position-x: right;
     background-position-y: bottom;
     background-size: cover;
