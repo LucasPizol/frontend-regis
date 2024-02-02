@@ -63,7 +63,7 @@ header {
 }
 
 .dropbtn {
-  background: url(/public/bandeira_brasil.webp);
+  background: url(../images/bandeira_brasil.webp);
   padding: 14px;
   font-size: 18px;
   border: solid 2px white;
@@ -75,7 +75,7 @@ header {
 }
 
 .english {
-  background: url(/public/bandeira_eua.webp);
+  background: url(../images/bandeira_eua.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

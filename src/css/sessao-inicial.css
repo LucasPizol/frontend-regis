@@ -8,7 +8,7 @@
       rgb(255, 255, 255) 28%,
       rgba(255, 255, 255, 0) 70%
     ),
-    url(/public/regis.jpg);
+    url(../images/regis.jpg);
   background-position: center;
   background-position-x: 70%;
   background-repeat: no-repeat;
