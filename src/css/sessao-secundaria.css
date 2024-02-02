@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 150px 0;
+  padding: 150px 20px;
   min-height: 80vh;
-
+  
 }
 
 .texto-experiencia p {
@@ -14,14 +14,12 @@
   font-family: var(--font);
   font-size: 28px;
 }
-  
+
 .sessao-secundaria-conteudo {
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  padding: 0 20px;
-
 }
 
 .fonte-dancing {
@@ -29,12 +27,13 @@
   position: relative;
   font-size: 40px !important;
   margin-left: 8px;
-  background: url(https://s1.static.brasilescola.uol.com.br/be/conteudo/images/2-bandeira-do-brasil.jpg) 50% 10%;
-    background-size: cover;
-    background-position: center;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: bold;
+  background: url(https://s1.static.brasilescola.uol.com.br/be/conteudo/images/2-bandeira-do-brasil.jpg)
+    50% 10%;
+  background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
 
 .fonte-dancing img {
@@ -52,12 +51,16 @@
   line-height: 1.5;
 }
 
-@media(max-width: 460px) {
+@media (max-width: 460px) {
   .texto-descricao {
     font-size: 14px !important;
   }
 
   .fonte-dancing {
     font-size: 30px !important;
+  }
+
+  .sessao-secundaria-conteudo {
+    padding: 0 12px;
   }
 }

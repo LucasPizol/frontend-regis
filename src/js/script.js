@@ -1,12 +1,40 @@
 const sessaoHeader = document.querySelector('header');
+const seta = document.querySelector('.seta');
+const menssagebutton = document.querySelector('.whatsapp-button')
+const avatar = document.querySelector('.avatar')
 
-    window.addEventListener('scroll', () => {
-      const scrollPosition = window.scrollY;
+let haveScrolled = false;
 
-      if (scrollPosition > 0) {
-        sessaoHeader.classList.add('nav-shadow');
-      } else {
-        sessaoHeader.classList.remove('nav-shadow');
-      }
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+    sessaoHeader.classList.add('nav-shadow');
+    seta.style = "opacity: 0%";
+  } else {
+    sessaoHeader.classList.remove('nav-shadow');
+    seta.style = "opacity: 100%"
+  }
+
+  if (scrollPosition > 600) {
+    if (!haveScrolled) {
+      haveScrolled = true;
+      avatar.style = "opacity: 100%"
+      setTimeout(function () {
+        avatar.style = "opacity: 0%";
+        setTimeout(() => {
+          avatar.style = "display: none";
+          menssagebutton.style = "opacity: 100%";
+        }, 1200)
+      }, 3000)
     }
+  }
+
+  document.querySelector(".menu-open").checked = false;
+}
 );
+
+document.querySelector('.conteudo-principal').addEventListener("click", (e) => {
+  if (e.currentTarget.className === 'whatsapp-button') return;
+  document.querySelector(".menu-open").checked = false;
+})
