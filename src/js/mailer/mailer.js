@@ -15,7 +15,7 @@ const sendEmail = async (e) => {
       email: inputEmail.value,
       message: inputMessage.value
     }
-    sendButton.innerHTML = "<img src='public/loading.gif' />"
+    sendButton.innerHTML = "<img src='./src/images/loading.gif' />"
     sendButton.disabled = true;
 
 
@@ -26,7 +26,7 @@ const sendEmail = async (e) => {
       "y_vtfNUHr0zTyYBsy"
     )
 
-    sendButton.innerHTML = "<img width='20' src='public/check-mark.svg' alt='' />Enviado!"
+    sendButton.innerHTML = "<img width='20' src='./src/images/check-mark.svg' alt='' />Enviado!"
     sendButton.classList.toggle("sended")
     inputName.value = ""
     inputEmail.value = ""
@@ -38,7 +38,7 @@ const sendEmail = async (e) => {
     });
 
     setTimeout(() => {
-      sendButton.innerHTML = "<img src='public/send-email.svg' alt='' />Enviar"
+      sendButton.innerHTML = "<img src='./src/images/send-email.svg' alt='' />Enviar"
       sendButton.classList.toggle("sended")
       sendButton.disabled = false;
 

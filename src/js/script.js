@@ -19,14 +19,14 @@ window.addEventListener('scroll', () => {
   if (scrollPosition > 600) {
     if (!haveScrolled) {
       haveScrolled = true;
-      avatar.style = "opacity: 100%"
+      avatar.style = "transform: translate(0, -50%) rotateZ(-70deg) scaleX(-1)"
       setTimeout(function () {
         avatar.style = "opacity: 0%";
         setTimeout(() => {
           avatar.style = "display: none";
           menssagebutton.style = "opacity: 100%";
-        }, 1200)
-      }, 3000)
+        }, 800)
+      }, 2500)
     }
   }
 
